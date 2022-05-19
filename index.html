@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Unit5-01-HTML-EvenNumberDisplay -->
+<html lang="en-ca">
+  <head>
+    <!-- meta data -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Even Number Display" />
+    <meta name="keywords" content="immaculata, ics2o" />
+    <meta name="author" content="Madeleine Forgeron" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" 
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Number Display</title>
+  </head>
+  <body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- JS link -->
+    <script src="./js/script.js"></script>
+    <!--header -->
+ <h1>Number Display</h1>
+      <main class="mdl-layout__content">
+        <!-- image -->
+        <table>
+          <tr>
+            <th>
+              <img src="./images/blank_number_line.png" alt="blank_number_line" width="75%" height="auto"/>
+            </th>
+          </tr>
+        </table>
+<!-- enter table -->
+		<table>
+			<tr>
+				<td>
+					<h3>Enter a min and a max:</h3>
+					<form action="javascript:numberDisplay()">						      <!-- enter minimum -->
+						<label for="minimum">Minimum:</label>
+						<input type="number" step="any" id="minimum" placeholder="Enter minimum"><br><br>
+            <!-- enter maximum -->
+            <label for="maximum">Maximum:</label>
+						<input type="number" step="any" id="maximum" placeholder="Enter maximum"><br><br>
+						<input type="submit" value="Display results">
+					</form>
+				</td>
+			</tr>
+		</table>
+        <!-- div id -->
+            <div id="display-results"></div>
+          </div>
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
